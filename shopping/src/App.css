@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.headersection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.left {
+  flex: 4;
+}
+
+.center {
+  flex: 4;
+  text-align: center;
+}
+
+.center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.center ul li {
+  display: inline;
+  margin: 0 15px;
+  padding: 0;
+}
+
+.center ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.center ul li a:hover {
+  color: #ecf0f1;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.search {
+  padding: 1px;
+  font-size: 5px;
+  border: 2px solid #3498db;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-right: 20px; /* Adds space between the search input and the icons */
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
+.search::placeholder {
+  color: #bdc3c7;
+}
+
+.search:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 10px rgba(41, 128, 185, 0.5);
+}
+
+.right .signin,
+.right .cart-icon {
+  margin-left: 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 0px 20px;
+  transition: color 0.3s;
+}
+
+.right .signin:hover,
+.right .cart-icon:hover {
+  color: #3498db;
+}
+
+.right .cart-icon {
+  font-size: 24px;
+}
+
+.bannerbox {
+  width: calc(100% - 10px); /* Reduce the width by 20px on both sides */
+  overflow: hidden; /* Hide any overflow */
+  margin-bottom: 10px; /* Add some space below the banner box */
+  margin-top: 10px;
+  margin-left: 16px;
+  border-radius: 8px; /* Rounded corners for the banner box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.bannerbox img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove any default inline spacing */
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+.bannerbox img:hover {
+  transform: scale(1.01); /* Slight zoom effect on hover */
+}
+
+.collectionsection {
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background for contrast */
+  text-align: center;
+}
+
+.collectionsection h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.menImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.menImages img {
+  width: 150px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.menImages img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.womencollectionsection {
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background for contrast */
+  text-align: center;
+}
+
+.womencollectionsection h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.ladiesbannerbox img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove any default inline spacing */
+}
+
+.ladiesbannerbox img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* Optional: rounded corners for the image */
+}
+
+.ladiesbannerbox img:hover {
+  transform: scale(1.01); /* Slight zoom effect on hover */
+}
+
+.footersection {
+  background-color: #2c2a2a; /* Dark background color for the footer section */
+  padding: 5px; /* Add padding for spacing */
+  text-align: center; /* Center align text */
+}
+
+.footerbox img {
+  width: 100%; /* Make the image take the full width of its container */
+  height: 50; /* Maintain aspect ratio */
+  display: block; /* Remove any default inline spacing */
+}
